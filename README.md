@@ -15,7 +15,7 @@ Philippines region, province, cities/municipalities and barangays Laravel migrat
 ## Future plans
 - [ ] Eloquent relationship*
 
-*This would really take time to do and finish, if you'd like to help, I would gladly appreciate. Bayanihan, fellow Filipino programmers!
+*This would really take time to do and finish, if you'd like to help, I would gladly appreciate.
 
 ## Installation
 1. Install using Composer
