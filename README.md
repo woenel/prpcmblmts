@@ -13,7 +13,7 @@ Philippines region, province, cities/municipalities and barangays Laravel migrat
 *I'm still working on seeder for barangays table.
 
 ## Future plans
-- [ ] Eloquent relationship*
+- [ ] Table relationship*
 
 *This would really take time to do and finish, if you'd like to help, I would gladly appreciate.
 
