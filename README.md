@@ -7,8 +7,8 @@ Philippines region, province, cities/municipalities and barangays Laravel migrat
 Note: I didn't test it on lower version of Laravel but you can give it a try.
 
 ## Migration and seeding
-1. First, [Download](https://github.com/woenel/prpcmblmts/archive/master.zip) and extract it to your project.
-2. After you extract, paste this code to your `DatabaseSeeder.php` file (under `database > seeds` folder):
+1. First, [Download](https://github.com/woenel/prpcmblmts/archive/master.zip) and extract the database folder to your project.
+2. Paste this code to your `DatabaseSeeder.php` file (under `database > seeds` folder):
 ```
 public function run()
 {
