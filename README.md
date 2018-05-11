@@ -18,7 +18,7 @@ Note: I only tested it on **Laravel 5.6** but it should work fine on lower versi
 - [ ] Eloquent relationship*
 - [ ] Composer installer
 
-*This would really take time to do and finish, if you'd like to help, I would gladly appreciate. Let's help our fellow Filipino programmers to ease their development.
+*This would really take time to do and finish, if you'd like to help, I would gladly appreciate. Bayanihan, fellow Filipino programmers!
 
 ## Instructions (Migration and seeding)
 1. First, [Download](https://github.com/woenel/prpcmblmts/archive/master.zip), extract and paste the `database` folder inside your Laravel project.
