@@ -10,5 +10,17 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {},
+  "autoload": {
+    "psr-4": {
+      "Woenel\\Prpcmblmts\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Woenel\\Prpcmblmts\\ServiceProvider"
+      ]
+    }
+  }
 }
