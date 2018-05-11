@@ -26,6 +26,10 @@ composer require woenel/prpcmblmts
 ```
 php artisan migrate --path=database/migrations/prpcmblmts
 ```
+4. Dump autoload using Composer
+```
+composer dump-autoload
+```
 3. Finally, seed the data using the following seed artisan commands below
 ```
 php artisan db:seed --class=PhilippineRegionsTableSeeder
