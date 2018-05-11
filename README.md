@@ -38,7 +38,7 @@ php artisan migrate --path=database/migrations/prpcmblmts
 ```
 composer dump-autoload
 ```
-6. Lastly, seed the data using the following seed artisan commands below
+6. Lastly, seed the data using the following seed artisan commands one by one below
 ```
 php artisan db:seed --class=PhilippineRegionsTableSeeder
 php artisan db:seed --class=PhilippineProvincesTableSeeder
