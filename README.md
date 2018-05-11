@@ -22,8 +22,11 @@ Philippines region, province, cities/municipalities and barangays Laravel migrat
 ```
 composer require woenel/prpcmblmts
 ```
-2. Run the following migrate artisan command: `php artisan migrate --path=database/migrations/prpcmblmts`
-3. Finally, seed the data using the following seed artisan commands below:
+2. Run the following migrate artisan command
+```
+php artisan migrate --path=database/migrations/prpcmblmts
+```
+3. Finally, seed the data using the following seed artisan commands below
 ```
 php artisan db:seed --class=PhilippineRegionsTableSeeder
 php artisan db:seed --class=PhilippineProvincesTableSeeder
