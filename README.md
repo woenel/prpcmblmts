@@ -15,7 +15,7 @@ Note: I didn't test it on lower version of Laravel but you can give it a try.
 
 ## Migration and seeding
 1. [Download](https://github.com/woenel/prpcmblmts/archive/master.zip), extract and paste the `database` folder inside your Laravel project.
-2. Paste this code to your `DatabaseSeeder.php` file (under `database > seeds` folder):
+2. Paste the code below to the `DatabaseSeeder.php` file of your project (under `database > seeds` folder):
 ```
 public function run()
 {
