@@ -2,7 +2,7 @@
 Philippines region, province, cities/municipalities and barangays Laravel migration and table seeder.
 
 ## Requirements
-- Laravel 5.5.x and up
+- Laravel 5.1+
 
 ## What's inside
 - [x] Regions
@@ -22,19 +22,23 @@ Philippines region, province, cities/municipalities and barangays Laravel migrat
 ```
 composer require woenel/prpcmblmts
 ```
-2. Publish migration and seed files
+2. **This step is for Laravel 5.4 and below only**. In `config/app.php` add this inside provider
+```
+Woenel\Prpcmblmts\ServiceProvider::class
+```
+3. Publish migration and seed files
 ```
 php artisan vendor:publish --provider="Woenel\Prpcmblmts\ServiceProvider"
 ```
-3. Run the following migrate artisan command
+4. Run the following migrate artisan command
 ```
 php artisan migrate --path=database/migrations/prpcmblmts
 ```
-4. Dump autoload using Composer
+5. Dump autoload using Composer
 ```
 composer dump-autoload
 ```
-5. Lastly, seed the data using the following seed artisan commands below
+6. Lastly, seed the data using the following seed artisan commands below
 ```
 php artisan db:seed --class=PhilippineRegionsTableSeeder
 php artisan db:seed --class=PhilippineProvincesTableSeeder
