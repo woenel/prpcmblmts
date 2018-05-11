@@ -14,13 +14,13 @@ class ServiceProvider extends BaseServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/database/migrations/prpcmblmts' => database_path('migrations')
-        ], 'migrations');
+            __DIR__.'/database/migrations/prpcmblmts' => database_path('migrations') . '/prpcmblmts'
+        ], 'prpcmblmts-migrations');
 
         
         $this->publishes([
-            __DIR__.'/database/seeds' => database_path('migrations')
-        ], 'seeds');
+            __DIR__.'/database/seeds' => database_path('seeds')
+        ], 'prpcmblmts-seeds');
     }
 
     /**
