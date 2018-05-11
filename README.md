@@ -2,9 +2,7 @@
 Philippines region, province, cities/municipalities and barangays Laravel migration and table seeder.
 
 ## Requirements
-- Laravel 5.*
-
-Note: I only tested it on **Laravel 5.6** but it should work fine on lower versions.
+- Laravel 5.5.x and up
 
 ## What's inside
 - [x] Regions
@@ -16,12 +14,14 @@ Note: I only tested it on **Laravel 5.6** but it should work fine on lower versi
 
 ## Future plans
 - [ ] Eloquent relationship*
-- [ ] Composer installer
 
 *This would really take time to do and finish, if you'd like to help, I would gladly appreciate. Bayanihan, fellow Filipino programmers!
 
-## Instructions (Migration and seeding)
-1. First, [Download](https://github.com/woenel/prpcmblmts/archive/prpcmblmts-0.1.zip), extract and paste the `database` folder inside your Laravel project.
+## Installation (Migration and seeding)
+1. Install using Composer
+```
+composer require woenel/prpcmblmts
+```
 2. Run the following migrate artisan command: `php artisan migrate --path=database/migrations/prpcmblmts`
 3. Finally, seed the data using the following seed artisan commands below:
 ```
