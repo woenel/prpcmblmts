@@ -14,6 +14,9 @@ Note: I only tested it on **Laravel 5.6** but it should work fine on lower versi
 
 *I'm still working on seeder for barangays table.
 
+## Future plans
+- [ ] Eloquent relationship
+- [ ] Composer installer
 
 ## Migration and seeding
 1. [Download](https://github.com/woenel/prpcmblmts/archive/master.zip), extract and paste the `database` folder inside your Laravel project.
@@ -27,3 +30,6 @@ php artisan db:seed --class=PhilippineCitiesTableSeeder
 
 ## Contribution
 If you would like to contribute by updating the data of regions, provinces, cities/municipalities or barangays, I would really appreciate it.
+
+## Credits
+[National Statistical Coordination Board](http://www.nscb.gov.ph/)
