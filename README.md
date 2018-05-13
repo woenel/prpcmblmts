@@ -28,7 +28,6 @@ In `config/app.php`, look for provider and add PRPCMBLMTS Service Provider
 ```
 Woenel\Prpcmblmts\ServiceProvider::class
 ```
-In Laravel 5.5 and up, the service provider will be auto-discovered.
 3. Publish migration and seed files
 ```
 $ php artisan vendor:publish --provider="Woenel\Prpcmblmts\ServiceProvider"
