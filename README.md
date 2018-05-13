@@ -22,7 +22,7 @@ Philippines region, province, cities/municipalities and barangays Laravel migrat
 ```
 $ composer require woenel/prpcmblmts
 ```
-2. **This step is for Laravel 5.4 and below only. You don't have to follow this step if you are using Laravel 5.5 and up.**
+2. **This step is for Laravel 5.4 and below only. You don't need to follow this step if you are using Laravel 5.5 and up.**
 \
 In `config/app.php`, look for provider and add PRPCMBLMTS Service Provider
 ```
