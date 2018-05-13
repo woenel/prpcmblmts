@@ -20,29 +20,32 @@ Philippines region, province, cities/municipalities and barangays Laravel migrat
 ## Installation
 1. Install using Composer
 ```
-composer require woenel/prpcmblmts
+$ composer require woenel/prpcmblmts
 ```
-2. **This step is for Laravel 5.4 and below only**. In `config/app.php`, add this inside provider
+2. **This step is for Laravel 5.4 and below only. You don't have to follow this step if you are using Laravel 5.5 and up.**
+\
+In `config/app.php`, look for provider and add PRPCMBLMTS Service Provider
 ```
 Woenel\Prpcmblmts\ServiceProvider::class
 ```
+In Laravel 5.5 and up, the service provider will be auto-discovered.
 3. Publish migration and seed files
 ```
-php artisan vendor:publish --provider="Woenel\Prpcmblmts\ServiceProvider"
+$ php artisan vendor:publish --provider="Woenel\Prpcmblmts\ServiceProvider"
 ```
 4. Run the following migrate artisan command
 ```
-php artisan migrate --path=database/migrations/prpcmblmts
+$ php artisan migrate --path=database/migrations/prpcmblmts
 ```
 5. Dump autoload using Composer
 ```
-composer dump-autoload
+$ composer dump-autoload
 ```
 6. Lastly, seed the data using the following seed artisan commands one by one below
 ```
-php artisan db:seed --class=PhilippineRegionsTableSeeder
-php artisan db:seed --class=PhilippineProvincesTableSeeder
-php artisan db:seed --class=PhilippineCitiesTableSeeder
+$ php artisan db:seed --class=PhilippineRegionsTableSeeder
+$ php artisan db:seed --class=PhilippineProvincesTableSeeder
+$ php artisan db:seed --class=PhilippineCitiesTableSeeder
 ```
 
 ## Contribution
