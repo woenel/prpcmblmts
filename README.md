@@ -2,53 +2,38 @@
 Philippines region, province, cities/municipalities and barangays Laravel migration and table seeder.
 
 ## Requirements
-- Laravel 5.1+
+- Laravel 5.5 and up
 
 ## What's inside
 - [x] Regions
 - [x] Provinces
 - [x] Cities/Municipalities
-- [ ] Barangays*
-
-*I'm still working on seeder for barangays table.
-
-## Future plans
-- [ ] Table relationship*
-
-*This would really take time to do and finish, if you'd like to help, I would gladly appreciate.
+- [x] Barangays
 
 ## Installation
 1. Install using Composer
 ```
-$ composer require woenel/prpcmblmts
+composer require woenel/prpcmblmts
 ```
-2. **This step is for Laravel 5.4 and below only. You don't need to follow this step if you are using Laravel 5.5 and up.**
-\
-In `config/app.php`, look for provider and add PRPCMBLMTS Service Provider
+2. Publish migration and seed files
 ```
-Woenel\Prpcmblmts\ServiceProvider::class
+php artisan vendor:publish --provider="Woenel\Prpcmblmts\ServiceProvider"
 ```
-3. Publish migration and seed files
+3. Run the following migrate artisan command
 ```
-$ php artisan vendor:publish --provider="Woenel\Prpcmblmts\ServiceProvider"
+php artisan migrate --path="database/migrations/prpcmblmts"
 ```
-4. Run the following migrate artisan command
+4. Dump autoload using Composer
 ```
-$ php artisan migrate --path=database/migrations/prpcmblmts
+composer dump-autoload
 ```
-5. Dump autoload using Composer
+5. Lastly, seed the data using the following seed artisan commands below
 ```
-$ composer dump-autoload
-```
-6. Lastly, seed the data using the following seed artisan commands one by one below
-```
-$ php artisan db:seed --class=PhilippineRegionsTableSeeder
-$ php artisan db:seed --class=PhilippineProvincesTableSeeder
-$ php artisan db:seed --class=PhilippineCitiesTableSeeder
+php artisan db:seed --class=PhilippineRegionsTableSeeder
+php artisan db:seed --class=PhilippineProvincesTableSeeder
+php artisan db:seed --class=PhilippineCitiesTableSeeder
+php artisan db:seed --class=PhilippineBarangaysTableSeeder
 ```
 
-## Contribution
-Contribute by updating the data of regions, provinces, cities/municipalities or barangays, or by squashing bugs and errors.
-
-## Credits
+## Credit
 [National Statistical Coordination Board](http://www.nscb.gov.ph/)
