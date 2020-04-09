@@ -1,8 +1,10 @@
 # PRPCMBLMTS
 Philippines region, province, cities/municipalities and barangays Laravel migration and table seeder.
 
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+
 ## Requirements
-- Laravel 5.5 and up
+- Laravel 5.5 to 7.x
 
 ## What's inside
 - [x] Regions
@@ -36,4 +38,4 @@ php artisan db:seed --class=PhilippineBarangaysTableSeeder
 ```
 
 ## Credit
-[National Statistical Coordination Board](http://www.nscb.gov.ph/)
+[Philippine Statistics Authority](https://psa.gov.ph)
