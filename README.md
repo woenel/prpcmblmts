@@ -38,4 +38,4 @@ php artisan db:seed --class=PhilippineBarangaysTableSeeder
 ```
 
 ## Credit
-[Philippine Statistics Authority](https://psa.gov.ph)
+[Philippine Standard Geographic Code (PSGC)](https://psa.gov.ph/classification/psgc)
