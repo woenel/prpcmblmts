@@ -4,7 +4,7 @@ Philippines region, province, cities/municipalities and barangays Laravel migrat
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 
 ## Requirements
-- Laravel 5.5 to 7.x
+- Laravel 5.5 to 8.x
 
 ## What's inside
 - [x] Regions
