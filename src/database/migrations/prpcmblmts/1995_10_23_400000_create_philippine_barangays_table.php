@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePhilippineBarangaysTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -14,14 +14,13 @@ class CreatePhilippineBarangaysTable extends Migration
     public function up()
     {
         Schema::create('philippine_barangays', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('barangay_code')->index();
-            $table->string('barangay_description');
+            $table->id();
+            $table->string('psgc_code')->index();
+            $table->string('name');
             $table->string('region_code')->index();
             $table->string('province_code')->index();
-            $table->string('city_municipality_code')->index();
+            $table->string('city_code')->index();
             $table->timestamp('created_at')->useCurrent();
-            $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
     }
 
@@ -34,4 +33,4 @@ class CreatePhilippineBarangaysTable extends Migration
     {
         Schema::dropIfExists('philippine_barangays');
     }
-}
+};

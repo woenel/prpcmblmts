@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePhilippineProvincesTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -14,13 +14,12 @@ class CreatePhilippineProvincesTable extends Migration
     public function up()
     {
         Schema::create('philippine_provinces', function (Blueprint $table) {
-            $table->increments('id');
+            $table->id();
             $table->string('psgc_code')->index();
-            $table->string('province_description');
+            $table->string('name');
             $table->string('region_code')->index();
             $table->string('province_code')->index();
             $table->timestamp('created_at')->useCurrent();
-            $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
     }
 
@@ -33,4 +32,4 @@ class CreatePhilippineProvincesTable extends Migration
     {
         Schema::dropIfExists('philippine_provinces');
     }
-}
+};

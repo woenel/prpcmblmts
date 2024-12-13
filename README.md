@@ -1,10 +1,10 @@
 # PRPCMBLMTS
 Philippines region, province, cities/municipalities and barangays Laravel migration and table seeder.
 
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+![MIT License](https://img.shields.io/badge/license-MIT-blue)
 
 ## Requirements
-- Laravel 5.5 to 8.x
+- Laravel 8.x to 11.x
 
 ## What's inside
 - [x] Regions
@@ -29,12 +29,9 @@ php artisan migrate --path="database/migrations/prpcmblmts"
 ```
 composer dump-autoload
 ```
-5. Lastly, seed the data using the following seed artisan commands below
+5. Lastly, seed the data using the following seed artisan command below
 ```
-php artisan db:seed --class=PhilippineRegionsTableSeeder
-php artisan db:seed --class=PhilippineProvincesTableSeeder
-php artisan db:seed --class=PhilippineCitiesTableSeeder
-php artisan db:seed --class=PhilippineBarangaysTableSeeder
+php artisan db:seed --class=PhilippineSeeder
 ```
 
 ## Credit

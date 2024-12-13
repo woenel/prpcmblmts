@@ -11,25 +11,15 @@ class ServiceProvider extends BaseServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(): void
     {
         $this->publishes([
-            __DIR__.'/database/migrations/prpcmblmts' => database_path('migrations') . '/prpcmblmts'
+            __DIR__ . '/database/migrations/prpcmblmts' => database_path('migrations') . '/prpcmblmts'
         ], 'prpcmblmts-migrations');
 
-        
-        $this->publishes([
-            __DIR__.'/database/seeds' => database_path('seeds')
-        ], 'prpcmblmts-seeds');
-    }
 
-    /**
-     * Register services.
-     *
-     * @return void
-     */
-    public function register()
-    {
-        //
+        $this->publishes([
+            __DIR__ . '/database/seeders' => database_path('seeders')
+        ], 'prpcmblmts-seeders');
     }
 }
