@@ -36,7 +36,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Woenel\\Prpcmblmts\\PrpcmblmtsServiceProvider"
+                "Woenel\\Prpcmblmts\\ServiceProvider"
             ]
         }
     }
