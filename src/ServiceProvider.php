@@ -3,6 +3,7 @@
 namespace Woenel\Prpcmblmts;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
+use Woenel\Prpcmblmts\Commands\RunPrpcmblmts;
 
 class ServiceProvider extends BaseServiceProvider
 {
@@ -11,22 +12,16 @@ class ServiceProvider extends BaseServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(): void
     {
-        $app_version = (float) app()->version();
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                RunPrpcmblmts::class,
+            ]);
+        }
 
         $this->publishes([
             __DIR__ . '/database/migrations/prpcmblmts' => database_path('migrations') . '/prpcmblmts'
         ], 'prpcmblmts-migrations');
-
-        if ($app_version >= 8) {
-            $this->publishes([
-                __DIR__ . '/database/seeders' => database_path('seeders')
-            ], 'prpcmblmts-seeders');
-        } else {
-            $this->publishes([
-                __DIR__ . '/database/seeders' => database_path('seeds')
-            ], 'prpcmblmts-seeds');
-        }
     }
 }
