@@ -17,9 +17,14 @@ class ServiceProvider extends BaseServiceProvider
             __DIR__ . '/database/migrations/prpcmblmts' => database_path('migrations') . '/prpcmblmts'
         ], 'prpcmblmts-migrations');
 
-
-        $this->publishes([
-            __DIR__ . '/database/seeders' => database_path('seeders')
-        ], 'prpcmblmts-seeders');
+        if ((float) app()->version() >= 8) {
+            $this->publishes([
+                __DIR__ . '/database/seeders' => database_path('seeders')
+            ], 'prpcmblmts-seeders');
+        } else {
+            $this->publishes([
+                __DIR__ . '/database/seeds' => database_path('seeds')
+            ], 'prpcmblmts-seeds');
+        }
     }
 }

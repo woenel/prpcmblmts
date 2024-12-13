@@ -4,7 +4,7 @@ Philippines region, province, cities/municipalities and barangays Laravel migrat
 ![MIT License](https://img.shields.io/badge/license-MIT-blue)
 
 ## Requirements
-- Laravel 8.x to 11.x
+- Laravel 5.5 to 11.x
 
 ## What's inside
 - [x] Regions
