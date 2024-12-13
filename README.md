@@ -15,7 +15,7 @@ Philippines region, province, cities/municipalities and barangays Laravel migrat
 ## Installation
 1. Install using Composer
 ```
-composer require woenel/prpcmblmts
+composer require woenel/prpcmblmts "^1.1"
 ```
 2. Publish migration and seed files
 ```
