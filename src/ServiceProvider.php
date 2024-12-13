@@ -25,7 +25,7 @@ class ServiceProvider extends BaseServiceProvider
             ], 'prpcmblmts-seeders');
         } else {
             $this->publishes([
-                __DIR__ . '/database/seeds' => database_path('seeds')
+                __DIR__ . '/database/seeders' => database_path('seeds')
             ], 'prpcmblmts-seeds');
         }
     }
