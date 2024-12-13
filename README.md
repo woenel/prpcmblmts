@@ -1,7 +1,13 @@
 # PRPCMBLMTS
 Philippines region, province, cities/municipalities and barangays Laravel migration and table seeder.
 
-![MIT License](https://img.shields.io/badge/license-MIT-blue)
+> Version 2 is coming soon, featuring relationship capabilities and a host of other improvements.
+>
+> [YOU CAN CHECK THE DEV VERSION 2 HERE TO SEE WHAT'S NEW](https://github.com/woenel/prpcmblmts/tree/v2)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Packagist](https://img.shields.io/packagist/dt/woenel/prpcmblmts.svg)](https://packagist.org/packages/woenel/prpcmblmts)
+[![GitHub stars](https://img.shields.io/github/stars/woenel/prpcmblmts.svg)](https://github.com/woenel/prpcmblmts)
 
 ## Requirements
 - Laravel 5.5 to 11.x
