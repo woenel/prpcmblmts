@@ -1,4 +1,4 @@
-# PRPCMBLMTS (EXPERIMENTAL)
+# PRPCMBLMTS
 A Laravel package for managing Philippine regions, provinces, cities/municipalities, and barangays, complete with migration and seeding functionality. Includes built-in Eloquent relationship support for seamless querying of related data.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -6,7 +6,7 @@ A Laravel package for managing Philippine regions, provinces, cities/municipalit
 [![GitHub stars](https://img.shields.io/github/stars/woenel/prpcmblmts.svg)](https://github.com/woenel/prpcmblmts)
 
 ## WARNING
-**This version is still experimental. Do not use it in production.**
+**This version is still experimental. Use it with caution.**
 
 ## Requirements
 -   Laravel 8.x to 11.x
