@@ -180,4 +180,4 @@ This eliminates the need to instantiate the `Philippines` class manually and all
 ## Credit
 This package is based on the [Philippine Standard Geographic Code (PSGC)](https://psa.gov.ph/classification/psgc) dataset, which provides a structured classification of geographical regions, provinces, cities, and barangays in the Philippines.
 
-Developed with ♥ by [Ronnel R. Martinez (woenel)](https://github.com/woenel)
+Made with ♥ by [Ronnel R. Martinez (@woenel)](https://github.com/woenel)
