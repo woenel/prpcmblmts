@@ -22,7 +22,7 @@ A Laravel package for managing Philippine regions, provinces, cities/municipalit
 ### Step 1: Install the Package via Composer
 Run the following command to install the package:
 ```
-composer require woenel/prpcmblmts "^1.1.1"
+composer require woenel/prpcmblmts "^2.0"
 ```
 
 ### Step 2: Run the Migrations and Seed the Database
