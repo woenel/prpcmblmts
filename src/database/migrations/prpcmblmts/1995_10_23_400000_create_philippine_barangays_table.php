@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-return new class extends Migration
+class CreatePhilippineBarangaysTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('philippine_barangays', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->string('psgc_code')->index();
             $table->string('name');
             $table->string('region_code')->index();
@@ -33,4 +33,4 @@ return new class extends Migration
     {
         Schema::dropIfExists('philippine_barangays');
     }
-};
+}

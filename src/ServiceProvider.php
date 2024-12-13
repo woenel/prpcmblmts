@@ -11,13 +11,15 @@ class ServiceProvider extends BaseServiceProvider
      *
      * @return void
      */
-    public function boot(): void
+    public function boot()
     {
+        $app_version = (float) app()->version();
+
         $this->publishes([
             __DIR__ . '/database/migrations/prpcmblmts' => database_path('migrations') . '/prpcmblmts'
         ], 'prpcmblmts-migrations');
 
-        if (((float) app()->version()) >= 8) {
+        if ($app_version >= 8) {
             $this->publishes([
                 __DIR__ . '/database/seeders' => database_path('seeders')
             ], 'prpcmblmts-seeders');

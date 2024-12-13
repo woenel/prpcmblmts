@@ -12,7 +12,7 @@ class PhilippineProvinceSeeder extends Seeder
      *
      * @return void
      */
-    public function run(): void
+    public function run()
     {
         if (!DB::table('philippine_provinces')->count()) {
             DB::unprepared(file_get_contents(__DIR__ . '/sql/philippine_provinces.sql'));

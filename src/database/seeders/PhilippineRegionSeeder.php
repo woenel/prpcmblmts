@@ -12,7 +12,7 @@ class PhilippineRegionSeeder extends Seeder
      *
      * @return void
      */
-    public function run(): void
+    public function run()
     {
         if (!DB::table('philippine_regions')->count()) {
             DB::unprepared(file_get_contents(__DIR__ . '/sql/philippine_regions.sql'));

@@ -11,7 +11,7 @@ class PhilippineSeeder extends Seeder
      *
      * @return void
      */
-    public function run(): void
+    public function run()
     {
         $this->call([
             PhilippineRegionSeeder::class,
