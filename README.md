@@ -17,6 +17,7 @@ Philippines region, province, cities/municipalities and barangays Laravel migrat
 - [x] Provinces
 - [x] Cities/Municipalities
 - [x] Barangays
+- [ ] Relationships ([Moved to version 2.x](https://github.com/woenel/prpcmblmts/tree/v2))
 
 ## Installation
 1. Install using Composer
