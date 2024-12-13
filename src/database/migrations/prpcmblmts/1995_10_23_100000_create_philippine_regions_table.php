@@ -16,10 +16,9 @@ class CreatePhilippineRegionsTable extends Migration
         Schema::create('philippine_regions', function (Blueprint $table) {
             $table->increments('id');
             $table->string('psgc_code')->index();
-            $table->string('region_description');
+            $table->string('name');
             $table->string('region_code')->index();
             $table->timestamp('created_at')->useCurrent();
-            $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
     }
 
