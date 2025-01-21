@@ -30,7 +30,7 @@ composer require woenel/prpcmblmts "^2.x-dev"
 ### Step 2: Run the Migrations and Seed the Database
 After installing the package, you can run the migrations and seed the database with the following Artisan command:
 ```
-php artisan prpcmblmts:run
+php artisan philippines:run
 ```
 The `prpcmblmts:run` command will:
 1.  Publish the migration and seeder files.
