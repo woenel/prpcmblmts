@@ -17,7 +17,8 @@ A Laravel package for managing Philippine regions, provinces, cities/municipalit
 -   [x] Provinces
 -   [x] Cities/Municipalities
 -   [x] Barangays
--   [x] Relationships between Regions, Provinces, Cities, and Barangays
+-   [x] NEW: Relationships between Regions, Provinces, Cities, and Barangays
+-   [x] NEW: Compatible [with all databases supported by Laravel](https://laravel.com/docs/11.x/database#introduction)
 
 ## Installation
 
