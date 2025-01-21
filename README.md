@@ -32,7 +32,7 @@ After installing the package, you can run the migrations and seed the database w
 ```
 php artisan philippines:run
 ```
-The `prpcmblmts:run` command will:
+The `philippines:run` command will:
 1.  Publish the migration and seeder files.
 2.  Run the migrations to create the necessary tables.
 3.  Seed the database with the Philippine region, province, city, and barangay data.
