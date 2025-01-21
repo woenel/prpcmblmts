@@ -11,7 +11,7 @@ class RunPrpcmblmts extends Command
      *
      * @var string
      */
-    protected $signature = 'prpcmblmts:run';
+    protected $signature = 'philippines:run';
 
     /**
      * The console command description.
@@ -37,7 +37,7 @@ class RunPrpcmblmts extends Command
 
         $this->call('db:seed', ['--class' => \Woenel\Prpcmblmts\Database\Seeders\PrpcmblmtsSeeder::class]);
 
-        $this->info('PRPCMBLMTS is now ready!');
+        $this->info('PRPCMBLMTS is now ready! You may check the README.md for guides and information.');
 
         return Command::SUCCESS;
     }
