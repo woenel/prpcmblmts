@@ -21,7 +21,7 @@ class ServiceProvider extends BaseServiceProvider
         }
 
         $this->publishes([
-            __DIR__ . '/database/migrations/prpcmblmts' => database_path('migrations') . '/prpcmblmts'
+            __DIR__ . '/database/migrations/prpcmblmts' => database_path('migrations')
         ], 'prpcmblmts-migrations');
     }
 }
