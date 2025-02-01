@@ -31,7 +31,10 @@
     "autoload": {
         "psr-4": {
             "Woenel\\Prpcmblmts\\": "src/"
-        }
+        },
+        "classmap": [
+            "src/Database/Seeders"
+        ]
     },
     "extra": {
         "laravel": {
