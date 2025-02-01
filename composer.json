@@ -33,7 +33,7 @@
             "Woenel\\Prpcmblmts\\": "src/"
         },
         "classmap": [
-            "src/Database/Seeders"
+            "src/database/seeders"
         ]
     },
     "extra": {
