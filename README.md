@@ -9,7 +9,7 @@ A Laravel package for Philippine addresses, including regions, provinces, cities
 > This is a pre-release version and is still experimental. It may not be fully stable, so please use it with caution and report any issues you encounter.
 
 ## Requirements
--   Laravel 8.x to 11.x
+-   Laravel 8.x to 12.x
 -   PHP 8.x or higher
 
 ## Features
