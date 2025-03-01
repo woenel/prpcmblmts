@@ -10,7 +10,7 @@ Philippines region, province, cities/municipalities and barangays Laravel migrat
 [![GitHub stars](https://img.shields.io/github/stars/woenel/prpcmblmts.svg)](https://github.com/woenel/prpcmblmts)
 
 ## Requirements
-- Laravel 5.5 to 11.x
+- Laravel 5.5 to 12.x
 
 ## What's inside
 - [x] Regions
